@@ -3,6 +3,9 @@
 
 module.exports = function(environment) {
   let ENV = {
+    DS: {
+      host: 'api.openweathermap.org/data'
+    },
     modulePrefix: 'forecast-app',
     environment,
     rootURL: '/',

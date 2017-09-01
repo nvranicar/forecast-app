@@ -4,14 +4,47 @@
     <p class="subtitle">by Nathan Vranicar</p>
   </div>
   <div class="box">
-    <div class="input">
-      <input type="text" placeholder="Where are you?">
-      <button class="search">Get Forecast</button>
+    <form {{action "search" on="submit"}} class="input">
+      {{input value=formValues.city placeholder="Where are you?"}}
+      <button type="submit" class="search">Get Forecast</button>
       <button class="reset">Reset</button>
-    </div>
+    </form>
     <div class="results">
-      {{!-- <h4 class="empty-text">Search a location to get its 5-day weather forecast.</h4> --}}
+      {{!-- <h3 class="empty-text">Search a location to get its 5-day weather forecast.</h3> --}}
+      <h3 class="location">5-day forecast for Lexington, KY</h3>
       <div class="grid">
+        <div class="grid__item">
+          <div class="card">
+            <h4 class="day">Today</h4>
+            <span class="weather-icon">{{fa-icon "cloud"}}</span>
+            <p class="temp">80°F</p>
+            <p class="condition">Cloudy</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="card">
+            <h4 class="day">Today</h4>
+            <span class="weather-icon">{{fa-icon "cloud"}}</span>
+            <p class="temp">80°F</p>
+            <p class="condition">Cloudy</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="card">
+            <h4 class="day">Today</h4>
+            <span class="weather-icon">{{fa-icon "cloud"}}</span>
+            <p class="temp">80°F</p>
+            <p class="condition">Cloudy</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="card">
+            <h4 class="day">Today</h4>
+            <span class="weather-icon">{{fa-icon "cloud"}}</span>
+            <p class="temp">80°F</p>
+            <p class="condition">Cloudy</p>
+          </div>
+        </div>
         <div class="grid__item">
           <div class="card">
             <h4 class="day">Today</h4>
