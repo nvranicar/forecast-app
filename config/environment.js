@@ -4,7 +4,7 @@
 module.exports = function(environment) {
   let ENV = {
     DS: {
-      host: 'api.openweathermap.org/data'
+      host: 'https://api.weatherbit.io/v2.0/forecast/daily?city='
     },
     modulePrefix: 'forecast-app',
     environment,

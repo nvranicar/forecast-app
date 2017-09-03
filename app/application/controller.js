@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
 
   actions: {
     search() {
-      const city = this.store.findRecord('2.5', 'forecast?q=' + this.formValues.city + ',us&mode=json');
+      this.store.findRecord('forecast', this.formValues.city);
     }
   }
 });
