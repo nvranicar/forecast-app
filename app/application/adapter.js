@@ -9,5 +9,5 @@ export default DS.RESTAdapter.extend({
   urlForFindRecord(id, modelName, snapshot) {
     let baseUrl = this.buildURL();
     return `${baseUrl}${id}&days=5&key=ee70dbb4c92e416ab321865b456f5fda`;
-  }
+  },
 });

@@ -17,6 +17,4 @@ export default DS.JSONSerializer.extend({
       }
     }
   },
-
-  // primaryKey: 'city_name',
 });

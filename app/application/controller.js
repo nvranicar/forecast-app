@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
 
   actions: {
     search() {
-      this.transitionToRoute('forecast', this.formValues.city);
+      this.transitionToRoute('results', this.formValues.city);
       this.set('formValues', {});
     }
   }
